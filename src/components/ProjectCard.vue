@@ -101,7 +101,12 @@ export default {
 
 .uk-card-body {
   cursor: pointer;
-  height: calc(100% - 235px);
+}
+
+@media only screen and (min-width: 768px) {
+  .uk-card-body {
+    height: 50px;
+  }
 }
 
 .uk-card-footer {
