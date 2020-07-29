@@ -29,7 +29,11 @@
       </div>
       <div style="width: 50%">
         <span uk-icon="icon: link; ratio: 1"></span>
-        <a :href="projectURL(index)" class="uk-margin-small-left uk-button uk-button-text">Website</a>
+        <a
+          :href="projectURL(index)"
+          target="_blank"
+          class="uk-margin-small-left uk-button uk-button-text"
+        >Website</a>
       </div>
     </div>
   </div>
@@ -42,19 +46,19 @@ export default {
   props: {
     index: {
       type: Number,
-      default: 0
-    }
+      default: 0,
+    },
   },
   computed: mapGetters([
     "projectName",
     "projectDescription",
     "projectIcon",
     "projectGithub",
-    "projectURL"
+    "projectURL",
   ]),
   data() {
     return {
-      stargazers: 0
+      stargazers: 0,
     };
   },
   async mounted() {
@@ -70,8 +74,8 @@ export default {
   methods: {
     openProject() {
       window.location.href = this.projectURL(this.index);
-    }
-  }
+    },
+  },
 };
 </script>
 

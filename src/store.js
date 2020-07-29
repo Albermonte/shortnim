@@ -28,7 +28,7 @@ export default new Vuex.Store({
         description:
           "Short your longs URLs and earn NIM sharing the shorted URLs",
         github_url: "Albermonte/nimiq-shortener",
-        url: "https://eol.shortnim.me/",
+        url: "https://shortnim.ml/",
         icon: "shortnim_logo.png",
       },
       {
