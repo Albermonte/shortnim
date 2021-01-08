@@ -12,12 +12,14 @@
         <div class="uk-width-expand">
           <h3
             class="uk-card-title uk-margin-remove-bottom uk-text-normal uk-text-uppercase"
-          >{{projectName(index)}}</h3>
+          >
+            {{ projectName(index) }}
+          </h3>
         </div>
       </div>
     </div>
     <div class="uk-card-body" @click="openProject">
-      <p>{{projectDescription(index)}}</p>
+      <p>{{ projectDescription(index) }}</p>
     </div>
     <div class="uk-card-footer uk-flex">
       <div style="width: 50%">
@@ -25,7 +27,12 @@
         <a
           :href="`https://github.com/${projectGithub(index)}`"
           class="uk-margin-small-left uk-button uk-button-text"
-        >{{ stargazers > 1 ? `${stargazers} Stargazers` : `${stargazers} Stargazer` }}</a>
+          >{{
+            stargazers > 1 || stargazers === 0
+              ? `${stargazers} Stargazers`
+              : `${stargazers} Stargazer`
+          }}</a
+        >
       </div>
       <div style="width: 50%">
         <span uk-icon="icon: link; ratio: 1"></span>
@@ -33,7 +40,8 @@
           :href="projectURL(index)"
           target="_blank"
           class="uk-margin-small-left uk-button uk-button-text"
-        >Website</a>
+          >Website</a
+        >
       </div>
     </div>
   </div>
@@ -69,7 +77,7 @@ export default {
         )}/stargazers`
       )
     ).json();
-    this.stargazers = stargazers.length;
+    this.stargazers = stargazers.length > 0 ? stargazers.length : 0;
   },
   methods: {
     openProject() {

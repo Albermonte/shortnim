@@ -7,6 +7,15 @@ export default new Vuex.Store({
   state: {
     projects_array: [
       {
+        name: "Nimiq Sunset Cyberspace",
+        description:
+          "Score points, beat your own records and earn as many NIM as you can meanwhile",
+        github_url: "Albermonte/Nimiq-Sunset-Cyberspace",
+        url:
+          "https://play.google.com/store/apps/details?id=com.nimiqsunsetcyberspace",
+        icon: "cyberspace-icon.png",
+      },
+      {
         name: "NIM Pools Hub",
         description:
           "A place where new miners can start mining NIM in the easiest way possible",
