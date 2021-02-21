@@ -33,6 +33,15 @@ export default new Vuex.Store({
         icon: "nimpoolshubminer.png",
       },
       {
+        name: "NIM Pools Hub App",
+        description:
+          "Nimiq Pools monitor for Android, check your miner realtime, receive notifications on new payout, etc.",
+        github_url: "Albermonte/NIM-Pools-Hub",
+        url:
+          "https://play.google.com/store/apps/details?id=com.albermonte.nimpoolshub",
+        icon: "nimpoolshubminer.png",
+      },
+      {
         name: "Nimiq Shortener",
         description:
           "Short your longs URLs and earn NIM sharing the shorted URLs",
