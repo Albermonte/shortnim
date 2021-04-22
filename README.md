@@ -1,33 +1,20 @@
-# ShortNIM
+# shortnim-home
 
-Home Page for ShortNIM showing all my projects related to Nimiq
+## Build Setup
 
-## Project setup
+```bash
+# install dependencies
+$ yarn install
 
-```
-yarn install
-```
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-### Compiles and hot-reloads for development
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn run build
+# generate static project
+$ yarn generate
 ```
 
-### Run your tests
-
-```
-yarn run test
-```
-
-### Lints and fixes files
-
-```
-yarn run lint
-```
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
