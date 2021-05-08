@@ -1,17 +1,15 @@
 <template>
-	<div class="uk-card uk-card-hover uk-card-default uk-width-auto">
+	<div class="uk-card uk-card-hover uk-card-default uk-width-1-2@m">
 		<div
 			class="uk-card-header"
 			@click="openProject"
 		>
-			<div
-				class="uk-grid-small uk-flex-middle"
-				uk-grid
-			>
-				<div class="uk-width-auto logo-container">
+			<div class="header-flex">
+				<div class="uk-width-auto">
 					<img
 						class="uk-border-circle"
 						width="50"
+						height="50"
 						:src="require(`../assets/images/${projectIcon(index)}`)"
 					/>
 				</div>
@@ -110,10 +108,6 @@ export default {
 	border-radius: 5px;
 }
 
-.logo-container {
-	padding-left: 8px;
-}
-
 @media only screen and (max-width: 600px) {
 	.uk-card {
 		min-width: 90%;
@@ -123,16 +117,23 @@ export default {
 
 .uk-card-header {
 	cursor: pointer;
+	padding: 2rem 2rem;
+}
+
+.header-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .uk-card-body {
 	cursor: pointer;
-}
-
-@media only screen and (min-width: 768px) {
-	.uk-card-body {
-		height: 50px;
-	}
+	height: 7rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .uk-card-footer {

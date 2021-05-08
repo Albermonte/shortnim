@@ -10,6 +10,15 @@ export const state = () => ({
       icon: "cyberspace-icon.png",
     },
     {
+      name: "Nimiq Multi Cashlink",
+      description:
+        "Create and manage multiple cashlinks on one site",
+      github_url: "Albermonte/Nimiq-Multi-Cashlink",
+      url:
+        "https://cashlinks.shortnim.me/",
+      icon: "multicashlinks.png",
+    },
+    {
       name: "NIM Pools Hub",
       description:
         "A place where new miners can start mining NIM in the easiest way possible",
@@ -34,6 +43,14 @@ export const state = () => ({
       url:
         "https://play.google.com/store/apps/details?id=com.albermonte.nimpoolshub",
       icon: "nimpoolshubminer.png",
+    },
+    {
+      name: "NIM Tip Bot",
+      description:
+        " A Tip Bot to Tip Humans using the Nimiq tech. Tips are decentralized and each tip is processed on chain. Every user is in total control of their wallets even if the bot is offline",
+      github_url: "Albermonte/nim-tip-bot",
+      url: "https://t.me/NimiqTip_bot",
+      icon: "nimtipbot.png",
     },
     {
       name: "Nimiq Shortener",
